@@ -1,0 +1,10 @@
+[Unit]
+Description=Task Scheduler Service
+After=network.target
+
+[Service]
+ExecStart=/path/to/your/task_scheduler/TaskScheduler
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
